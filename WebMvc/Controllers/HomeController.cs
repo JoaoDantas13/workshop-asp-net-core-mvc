@@ -10,14 +10,15 @@ namespace WebMvc.Controllers
 {
     public class HomeController : Controller
     {
-        public IActionResult Index()
+        public IActionResult Index() //Chama a ação ex : ../home/index
         {
             return View();
         }
 
         public IActionResult About()
         {
-            ViewData["Message"] = "Your application description page.";
+            ViewData["Message"] = "Aplicativo Salles Web MVC do Curso C #.";
+            ViewData["Professor"] = "João Vitor";
 
             return View();
         }
@@ -25,6 +26,7 @@ namespace WebMvc.Controllers
         public IActionResult Contact()
         {
             ViewData["Message"] = "Your contact page.";
+            
 
             return View();
         }
